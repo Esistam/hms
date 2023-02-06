@@ -13,7 +13,7 @@ services:
         volumes:
                 - db-data:/var/lib/postgresql/data/pgdata
         networks:
-                - kadweka
+                - hospital
    odoo:
         image: odoo:12.0
         restart: always
@@ -29,12 +29,12 @@ services:
                 - ./custom-addons:/mnt/custom-addons
                 - odoo-data:/var/lib/odoo
         networks:
-                - kadweka
+                - hospital
 volumes:
         odoo-data:
         db-data:
 networks:
-        kadweka:
+        hospital:
 #    nginx:
 #         image: nginx:latest
 #         ports:
@@ -47,4 +47,4 @@ networks:
 #                 - ./nginx/sites-enabled/:/etc/nginx/conf.d:ro
 #                 # - /etc/letsencrypt:/etc/letsencrypt:ro
 #         networks:
-#                 - kadweka
+#                 - hospital
