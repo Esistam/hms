@@ -31,7 +31,7 @@ services:
         image: odoo:12.0
         restart: always
         ports:
-                - 8149:8069
+                - 8069:8069
                 - 8072:8072
         links:
                 - db:db
