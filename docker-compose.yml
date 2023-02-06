@@ -26,7 +26,7 @@ services:
                 PGADMIN_DEFAULT_EMAIL: 'husseinkatana17@gmail.com'
                 PGADMIN_DEFAULT_PASSWORD: 'password'
         networks:
-        - kadweka
+                - hospital
    odoo:
         image: odoo:12.0
         restart: always
