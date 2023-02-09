@@ -55,7 +55,7 @@ services:
                 - ./nginx/sites-enabled/:/etc/nginx/conf.d:ro
                 - /etc/letsencrypt:/etc/letsencrypt:ro
         networks:
-                - bsi
+                - hospital
 
 volumes:
         odoo-data:
