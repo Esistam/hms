@@ -1,0 +1,27 @@
+{
+    'name': "Delete Account Journal Posted Entry",
+    'version' : '13.0.2',
+    'summary': 'Delete Account Journal Posted Entry',
+    'category': 'Point of Sale',
+    'description': """ Delete Account Journal Posted Entry """,
+    "price": 9,
+    'currency': 'USD',
+    "author" : "MAISOLUTIONSLLC",
+    'sequence': 1,
+    "email": 'apps@maisolutionsllc.com',
+    "website":'http://maisolutionsllc.com/',
+    'license': 'OPL-1',
+    "depends" : ['base','account'],
+	"data": [
+		'security/account.xml',
+		'views/account_invoice_view.xml',
+	],
+    'images': [],
+    'qweb': [],
+    'images': ['static/description/main_screenshot.png'],
+    "live_test_url" : "https://youtu.be/IMIHoG-TEE4",
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
+
